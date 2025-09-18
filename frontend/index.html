@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Prep Bot</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                <p>Hello! I'm your Placement Prep Bot. Upload a resume to begin.</p>
+            </div>
+        </div>
+        <div class="controls">
+            <div id="main-menu">
+                <div id="resume-section">
+                    <input type="file" id="resume-input" accept=".pdf,.docx" hidden>
+                    <button id="upload-button" class="control-button">📎 Analyze Resume</button>
+                </div>
+                <div id="personalized-interview-section" style="display: none;">
+                    <button id="personalized-interview-button" class="control-button category-button">✨ Start Personalized Interview</button>
+                </div>
+            </div>
+            <div id="interview-section" style="display: none;">
+                <p id="question-text">The bot is preparing your question...</p>
+                <button id="record-button" class="control-button">🎤 Record Answer</button>
+            </div>
+            <div id="back-section" style="display: none;">
+                <button id="back-button" class="control-button" style="background-color: #6c757d;">⬅️ Back to Main Menu</button>
+            </div>
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
