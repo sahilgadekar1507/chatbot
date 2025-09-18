@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placemate - AI Company Insights</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/company-insights.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+             <div class="sidebar-header"><h1>PLACEMATE</h1></div>
+             <nav class="sidebar-nav">
+                 <ul>
+                    <li><a href="{{ url_for('pages.dashboard') }}" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="{{ url_for('pages.mock_interview') }}" class="nav-link"><i class="fas fa-microphone"></i> Mock Interview</a></li>
+                    <li><a href="{{ url_for('pages.resume_analysis') }}" class="nav-link"><i class="fas fa-file-alt"></i> Resume Analysis</a></li>
+                    <li><a href="{{ url_for('pages.company_insights') }}" class="nav-link active"><i class="fas fa-building"></i> Company Insights</a></li>
+                 </ul>
+             </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="welcome-message"><span>Welcome back, John!</span></div>
+                <div class="user-profile"><div class="user-avatar">JD</div></div>
+            </header>
+            <div class="page-container">
+                <section id="company-insights" class="page active">
+                    <div class="page-header">
+                        <h2>AI-Powered Company Insights</h2>
+                        <p>Get the latest placement-focused data on any company.</p>
+                    </div>
+
+                    <div id="search-view">
+                        <div class="filter-bar">
+                            <div class="search-container">
+                                <i class="fas fa-search"></i>
+                                <input type="text" id="search-input" placeholder="Search for a company (e.g., Google, Microsoft)" />
+                            </div>
+                            <button id="search-btn" class="btn btn-primary"><i class="fas fa-search"></i> Generate Insights</button>
+                        </div>
+                    </div>
+                    
+                    <div id="insights-view" class="hidden">
+                        <button id="back-to-search-btn" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> New Search</button>
+                        <div id="company-insights-content" class="card" style="margin-top: 20px;">
+                            </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/company-insights.js') }}"></script>
+</body>
+</html>

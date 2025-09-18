@@ -1,0 +1,40 @@
+/* Styles specific to the Company Insights page */
+
+.filter-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    flex-grow: 1;
+    position: relative;
+}
+
+.search-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+#search-input {
+    width: 100%;
+    padding: 12px 20px 12px 40px; /* Add padding for the icon */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#back-to-search-btn {
+    margin-bottom: 20px;
+}
+
+#company-insights-content {
+    background-color: var(--background-color);
+}
