@@ -71,17 +71,20 @@
                         <div class="card action-card">
                             <h3><i class="fas fa-microphone"></i> Mock Interview</h3>
                             <p>Practice with AI-powered interviews for technical, behavioral, and HR rounds.</p>
-                            <button class="btn btn-primary" onclick="window.location.href='mock-interview.html'">Start Interview</button>
+                            <a href="{{ url_for('pages.mock_interview') }}" class="nav-link">
+                            <button class="btn btn-primary" onclick="window.location.href='mock-interview.html'">Start Interview</button></a>
                         </div>
                         <div class="card action-card">
                             <h3><i class="fas fa-file-alt"></i> Resume Analysis</h3>
                             <p>Get detailed feedback and suggestions to improve your resume.</p>
-                            <button class="btn btn-primary" onclick="window.location.href='resume-analysis.html'">Analyze Resume</button>
+                            <a href="{{ url_for('pages.resume_analysis') }}" class="nav-link">
+                            <button class="btn btn-primary" onclick="window.location.href='resume-analysis.html'">Analyze Resume</button></a>
                         </div>
                         <div class="card action-card">
                             <h3><i class="fas fa-building"></i> Company Insights</h3>
                             <p>Explore company trends, job openings, and market insights.</p>
-                            <button class="btn btn-primary" onclick="window.location.href='company-insights.html'">View Companies</button>
+                            <a href="{{ url_for('pages.company_insights') }}" class="nav-link">
+                            <button class="btn btn-primary" onclick="window.location.href='company-insights.html'">View Companies</button></a>
                         </div>
                     </div>
                     <div class="bottom-grid">
